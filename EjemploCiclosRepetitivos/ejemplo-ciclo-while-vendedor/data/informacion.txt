@@ -1,14 +1,14 @@
 Datos de Vendedor
-Nombre: 1
-Edad: 1
-Salario mínimo: 1,00
-Número de autos: 1
-Pago mensual: 151,00
+Nombre: Bruno
+Edad: 56
+Salario mínimo: 23456,00
+Número de autos: 345
+Pago mensual: 75206,00
 
 Datos de Vendedor
-Nombre: 1
-Edad: 2
-Salario mínimo: 2,00
-Número de autos: 2
-Pago mensual: 302,00
+Nombre: Karla
+Edad: 78
+Salario mínimo: 234567,00
+Número de autos: 3456
+Pago mensual: 752967,00
 

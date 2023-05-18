@@ -9,19 +9,30 @@ package paquete01;
  *
  * @author reroes
  */
+import paquete04.Colegio;
+
 public class LibretaCalificacion {
 
     private String estudiante;
     private double promedio;
     private String promedioCualitativo;
     private double[] calificaciones;
-    // private Colegio c;
+    private Colegio colegio;
 
-    public LibretaCalificacion(String n, double[] c) {
+    public LibretaCalificacion(String n, double[] c, Colegio x) {
         estudiante = n;
         calificaciones = c;
+        colegio = x;
     }
 
+    public void establecerColegio(Colegio c) {
+        colegio = c;
+    }
+    
+    public Colegio obtenerColegio() {
+        return colegio;
+    }
+    
     public void establecerEstudiante(String n) {
         estudiante = n;
     }
@@ -84,8 +95,9 @@ public class LibretaCalificacion {
     @Override
     public String toString() {
         String cadena = "Libreta de Calificaciones\n";
-        cadena = String.format("%sNombre: %s\nCalificaciones:\n", cadena,
-                obtenerEstudiante());
+        cadena = String.format("%sColegio: %S\nCiudad: %S\nNombre: "
+                + "%s\nCalificaciones:\n", cadena, colegio.obtenerNombre(), 
+                colegio.obtenerCuidad(), obtenerEstudiante());
         // cadena = String.format("%sNombre: %s\nCalificaciones:\n", cadena,
         //        estudiante);
         

@@ -1,33 +1,30 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package paquete02;
-
+package paquete04;
 import java.util.Locale;
 import java.util.Scanner;
-
-public class Ejecutor {
-
+import paquete02.Vendedor;
+/**
+ *
+ * @author SALA I
+ */
+public class Principal {
     public static void main(String[] args) {
-        // variables para ingreso de datos
         String nombre;
         int edad;
         double sMinino;
         int autos;
-        boolean bandera;
-        String opcion;
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
         
         String cadenaFinal;
-        // Inicio de proceso iterativo 
-        bandera = true;
-        cadenaFinal = ""; // inicializo la variable que contendrá la cadena
-        // final.
         
-        while (bandera) { // bandera == true
+        cadenaFinal = "";
+        
+        // Este for permitira que el ciclo se repita 3 veces exactas
+        for (int i=0; i<3; i++) {
             System.out.println("Ingrese el nombre del vendedor");
             nombre = entrada.nextLine();
             System.out.println("Ingrese edad del vendedor");
@@ -54,16 +51,8 @@ public class Ejecutor {
                     v.obtenerPagoMensual());
 
             entrada.nextLine(); // limpieza del buffer
-            System.out.println("Desea ingresar más vendedores. Ingrese n para"
-                    + " salir");
-            opcion = entrada.nextLine();
-            if (opcion.equals("n")) {
-                bandera = false;
-            }
-
         }
-        // cuando se sale del ciclo repetitivo debemos presentar en pantalla
-        // el valor de cadena final
+        
         System.out.printf("%s\n", cadenaFinal);
     }
 }

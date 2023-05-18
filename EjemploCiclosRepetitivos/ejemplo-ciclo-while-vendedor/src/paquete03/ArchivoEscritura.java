@@ -12,6 +12,7 @@ public class ArchivoEscritura {
     private String nombreArchivo;
     private String dataFinal;
     private Formatter salidaArchivo;
+    // Formatter es propio de Java
     
     public void establecerNombreArchivo(String n){
         nombreArchivo = n;

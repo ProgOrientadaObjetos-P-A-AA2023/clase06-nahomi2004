@@ -5,6 +5,7 @@
  */
 package paquete01;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Ejecutor {
@@ -17,7 +18,10 @@ public class Ejecutor {
         int autos;
         boolean bandera;
         String opcion;
+        
         Scanner entrada = new Scanner(System.in);
+        entrada.useLocale(Locale.US);
+        // Acepte las comas como puntos uwu
 
         // Inicio de proceso iterativo 
         bandera = true;
@@ -54,5 +58,7 @@ public class Ejecutor {
             }
 
         }
+        
+        // Cuando sale del ciclo se cierra el main y despues la clase uwu
     }
 }
